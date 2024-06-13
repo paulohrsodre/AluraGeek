@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alura Geek</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img class="logo__img" src="./images/logo-hearts.svg" alt="Imagem corações e pixel art">
+            <h2 class="logo__titulo">Alura<span>Geek</span></h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="container__form">
+            <form id="form" class="formulario">
+                <h3 class="container__form-titulo">ADICIONAR PRODUTO!</h3>
+                <div class="form__item">
+                    <input type="text" id="nome" name="nome" placeholder="nome...">
+                </div>
+                <div class="form__item">
+                    <input type="text" id="preco" name="preco" placeholder="preço...">
+                </div>
+                <div class="form__item">
+                    <input type="text" id="imagem" name="imagem" placeholder="imagem...">
+                </div>
+
+                <div class="form__botoes">
+                    <button type="submit" class="botao__principal">Guardar</button>
+                    <button type="reset" class="botao__secundario">Limpar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="container__produtos">
+            <h1 class="container__produtos-titulo">MEUS PRODUTOS:</h1>
+            <div class="produtos__carrossel">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="logo">
+            <img class="logo__img" src="./images/logo-hearts.svg" alt="Imagem corações e pixel art">
+            <h2 class="logo__titulo">Alura<span>Geek</span></h2>
+        </div>
+        <div class="rodape__info">
+            <h3>DESENVOLVIDO POR PAULO SODRÉ</h3>
+            <p>ALURA LATAM - 2024</p>
+        </div>
+    </footer>
+
+    <script src="services/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

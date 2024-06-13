@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap');
+
+@import url("./css/botao.css");
+@import url("./css/campoTexto.css");
+@import url("./css/card.css");
+@import url("./css/logo.css");
+@import url("./css/reset.css");
+
+* {
+    --cor-tema: #5D04D9;
+    --cor-elementos: #03318C;
+    --cor-branco: #E5E5E5;
+    --cor-preto: #000000;
+
+    --fonte-primaria: "IBM Plex Mono", monospace;
+    --fonte-secundaria: "Press Start 2P", system-ui;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--cor-tema);
+    padding: 20px 0;
+    -webkit-box-shadow: 0px 7px 0.9px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 7px 0.9px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 7px 0.9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+}
+
+.container__form-titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    text-align: center;
+}
+
+.form__botoes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 5px;
+}
+
+.container__produtos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__produtos-titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    text-align: center;
+    padding: 58px 0;
+}
+
+.produtos__carrossel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 34px 0 44px 16px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cor-tema);
+    padding: 32px 0;
+    margin-top: 58px;
+    -webkit-box-shadow: 0px -10px 9.5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px -10px 9.5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px -10px 9.5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.rodape__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: var(--cor-branco);
+    bottom: 0;
+}
+
+.rodape__info p {
+    font-weight: 200;
+}
+
+@media (min-width: 1023px) {
+    .container {
+        flex-direction: row-reverse;
+        gap: 70px;
+        margin: 60px 0;
+        padding: 50px 70px;
+        box-sizing: border-box;
+    }
+
+    .produtos__carrossel {
+        -webkit-box-shadow: -12px 10px 5px 6px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: -12px 10px 5px 6px rgba(0, 0, 0, 0.25);
+        box-shadow: -12px 10px 5px 6px rgba(0, 0, 0, 0.25);
+    }
+}

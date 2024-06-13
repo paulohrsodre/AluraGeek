@@ -1,0 +1,40 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Stormtropper",
+      "preco": 60,
+      "imagem": "../images/Stormtropper.svg"
+    },
+    {
+      "id": "2",
+      "nome": "AF - Iron-Man",
+      "preco": 250,
+      "imagem": "../images/ironman.webp"
+    },
+    {
+      "id": "3",
+      "nome": "AF - Luffy OP",
+      "preco": 180,
+      "imagem": "../images/action-luffy.jpg"
+    },
+    {
+      "id": "4",
+      "nome": "Lego Star Wars",
+      "preco": 150,
+      "imagem": "../images/lego-starwars.jpg"
+    },
+    {
+      "id": "5",
+      "nome": "Playstation 5",
+      "preco": 3200,
+      "imagem": "../images/ps5.avif"
+    },
+    {
+      "id": "6",
+      "nome": "Baldur`s Gate 3",
+      "preco": 250,
+      "imagem": "../images/baldur-gate.webp"
+    }
+  ]
+}
